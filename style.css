@@ -2,10 +2,6 @@ body, html{
     height: 100%;
 }
 
-header{
-    background-color:rgb(94, 93, 93);
-}
-
 body {
     color: cyan;
     background-color:black;
@@ -15,10 +11,6 @@ body {
 }
 
 h1{
-    color: white;
-}
-
-h3{
     color: white;
 }
 
