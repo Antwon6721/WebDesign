@@ -2,12 +2,8 @@ body, html{
     height: 100%;
 }
 
-header{
-    background-color:rgb(94, 93, 93);
-}
-
 body {
-    color: yellow;
+    color: rgb(0, 204, 255);
     background-color:black;
     text-align: center;
     margin-left: 20px;
@@ -16,10 +12,6 @@ body {
 
 h1{
     color:rgb(255, 255, 0)
-}
-
-h3{
-    color: white;
 }
 
 h4 {
