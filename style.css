@@ -47,7 +47,7 @@ h2 {
     background-image: url("BBQ.jpg")
 }
 
-iframe[seamless]{
+iframe[seamless].loader{
     border: none;
     width: 100%;
     height: 500px;
