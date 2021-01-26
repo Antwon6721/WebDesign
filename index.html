@@ -35,19 +35,6 @@ body {
   margin-top: 30px;
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -56,7 +43,7 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay nav {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
@@ -70,13 +57,13 @@ body {
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#">Attractions</a>
-    <a href="#">Transportation</a>
-    <a href="#">Details</a>
-    <a href="#">Food</a>
+    <button id="Nav" onclick="document.getElementById('attractions').scrollIntoView(),closeNav()">Attractions</button>
+    <button id="Nav" onclick="document.getElementById('transportation').scrollIntoView(),closeNav()">Transportation</button>
+    <button id="Nav" onclick="document.getElementById('details').scrollIntoView(),closeNav()">Details</button>
+    <button id="Nav" onclick="document.getElementById('food').scrollIntoView(),closeNav()">Food</button>
   </div>
 </div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
 
 <script>
 function openNav() {
