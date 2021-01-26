@@ -45,7 +45,6 @@ body {
 @media screen and (max-height: 450px) {
   .overlay nav {font-size: 20px}
   .overlay .closebtn {
-  font-size: 40px;
   top: 15px;
   right: 35px;
   }
@@ -61,7 +60,7 @@ body {
     <button id="Nav" onclick="document.getElementById('transportation').scrollIntoView(),closeNav()">Transportation</button>
     <button id="Nav" onclick="document.getElementById('details').scrollIntoView(),closeNav()">Details</button>
     <button id="Nav" onclick="document.getElementById('food').scrollIntoView(),closeNav()">Food</button>
-    <button id="Nav" onclick="document.getElementById('index').scrollIntoView(),closeNav()">Home</button>
+    <button id="Nav" onclick="document.getElementById('home').scrollIntoView(),closeNav()">Home</button>
   </div>
 </div>
 <span id="openButton" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
@@ -75,11 +74,6 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 </script>
-
-                <!--<button onclick="document.getElementById('attractions').scrollIntoView()">Attractions</button>
-                <button onclick="document.getElementById('transportation').scrollIntoView()">Transportation</button>
-                <button onclick="document.getElementById('details').scrollIntoView()">Details</button>
-                <button onclick="document.getElementById('food').scrollIntoView()">Food</button>-->
             </nav>        
                
             
@@ -93,13 +87,160 @@ function closeNav() {
 
             <div class="parallax" id="parallax1"></div>
             <div id="attractions">
+                <header>
+                    <h1>Local Attractions</h1>
+                </header>
+                <nav>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                    body {
+                      font-family: 'Lato', sans-serif;
+                    }
+                    
+                    .overlay {
+                      height: 100%;
+                      width: 0;
+                      position: fixed;
+                      z-index: 1;
+                      top: 0;
+                      left: 0;
+                      background-color: rgb(0,0,0);
+                      background-color: rgba(0,0,0, 0.9);
+                      overflow-x: hidden;
+                      transition: 0.5s;
+                    }
+                    
+                    .overlay-content {
+                      position: relative;
+                      top: 25%;
+                      width: 100%;
+                      text-align: center;
+                      margin-top: 30px;
+                    }
+                    
+                    .overlay .closebtn {
+                      position: absolute;
+                      top: 20px;
+                      right: 45px;
+                      font-size: 60px;
+                    }
+                    
+                    @media screen and (max-height: 450px) {
+                      .overlay nav {font-size: 20px}
+                      .overlay .closebtn {
+                      top: 15px;
+                      right: 35px;
+                      }
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <div class="overlay-content">
+                        <button id="Nav" onclick="document.getElementById('attractions').scrollIntoView(),closeNav()">Attractions</button>
+                        <button id="Nav" onclick="document.getElementById('transportation').scrollIntoView(),closeNav()">Transportation</button>
+                        <button id="Nav" onclick="document.getElementById('details').scrollIntoView(),closeNav()">Details</button>
+                        <button id="Nav" onclick="document.getElementById('food').scrollIntoView(),closeNav()">Food</button>
+                        <button id="Nav" onclick="document.getElementById('home').scrollIntoView(),closeNav()">Home</button>
+                      </div>
+                    </div>
+                    <span id="openButton" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("myNav").style.width = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("myNav").style.width = "0%";
+                    }
+                    </script>
+                    
+                </nav>
+                <hr>
                 <iframe src="attractions.html" scrolling="no" class="loader" seamless style="height: 1750px;"></iframe>
+                
                 <br>
                 <button onclick="document.getElementById('header').scrollIntoView()">Scroll to Top</button>
             </div>
 
             <div class="parallax" id="parallax2"></div>
             <div id="transportation">
+                <header>
+                    <h1>Transportation</h1>
+                </header>
+                <nav>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                    body {
+                      font-family: 'Lato', sans-serif;
+                    }
+                    
+                    .overlay {
+                      height: 100%;
+                      width: 0;
+                      position: fixed;
+                      z-index: 1;
+                      top: 0;
+                      left: 0;
+                      background-color: rgb(0,0,0);
+                      background-color: rgba(0,0,0, 0.9);
+                      overflow-x: hidden;
+                      transition: 0.5s;
+                    }
+                    
+                    .overlay-content {
+                      position: relative;
+                      top: 25%;
+                      width: 100%;
+                      text-align: center;
+                      margin-top: 30px;
+                    }
+                    
+                    .overlay .closebtn {
+                      position: absolute;
+                      top: 20px;
+                      right: 45px;
+                      font-size: 60px;
+                    }
+                    
+                    @media screen and (max-height: 450px) {
+                      .overlay nav {font-size: 20px}
+                      .overlay .closebtn {
+                      top: 15px;
+                      right: 35px;
+                      }
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <div class="overlay-content">
+                        <button id="Nav" onclick="document.getElementById('attractions').scrollIntoView(),closeNav()">Attractions</button>
+                        <button id="Nav" onclick="document.getElementById('transportation').scrollIntoView(),closeNav()">Transportation</button>
+                        <button id="Nav" onclick="document.getElementById('details').scrollIntoView(),closeNav()">Details</button>
+                        <button id="Nav" onclick="document.getElementById('food').scrollIntoView(),closeNav()">Food</button>
+                        <button id="Nav" onclick="document.getElementById('home').scrollIntoView(),closeNav()">Home</button>
+                      </div>
+                    </div>
+                    <span id="openButton" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("myNav").style.width = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("myNav").style.width = "0%";
+                    }
+                    </script>
+                    
+                </nav>
+                <hr>
                 <iframe src="transportation.html" scrolling="no" class="loader" seamless></iframe>
                 <br>
                 <button onclick="document.getElementById('header').scrollIntoView()">Scroll to Top</button>
@@ -107,6 +248,79 @@ function closeNav() {
 
             <div class="parallax" id="parallax3"></div>
             <div id="details">
+                <header>
+                    <h1>Details</h1>
+                </header>
+                <nav>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                    body {
+                      font-family: 'Lato', sans-serif;
+                    }
+                    
+                    .overlay {
+                      height: 100%;
+                      width: 0;
+                      position: fixed;
+                      z-index: 1;
+                      top: 0;
+                      left: 0;
+                      background-color: rgb(0,0,0);
+                      background-color: rgba(0,0,0, 0.9);
+                      overflow-x: hidden;
+                      transition: 0.5s;
+                    }
+                    
+                    .overlay-content {
+                      position: relative;
+                      top: 25%;
+                      width: 100%;
+                      text-align: center;
+                      margin-top: 30px;
+                    }
+                    
+                    .overlay .closebtn {
+                      position: absolute;
+                      top: 20px;
+                      right: 45px;
+                      font-size: 60px;
+                    }
+                    
+                    @media screen and (max-height: 450px) {
+                      .overlay nav {font-size: 20px}
+                      .overlay .closebtn {
+                      top: 15px;
+                      right: 35px;
+                      }
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <div class="overlay-content">
+                        <button id="Nav" onclick="document.getElementById('attractions').scrollIntoView(),closeNav()">Attractions</button>
+                        <button id="Nav" onclick="document.getElementById('transportation').scrollIntoView(),closeNav()">Transportation</button>
+                        <button id="Nav" onclick="document.getElementById('details').scrollIntoView(),closeNav()">Details</button>
+                        <button id="Nav" onclick="document.getElementById('food').scrollIntoView(),closeNav()">Food</button>
+                        <button id="Nav" onclick="document.getElementById('home').scrollIntoView(),closeNav()">Home</button>
+                      </div>
+                    </div>
+                    <span id="openButton" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("myNav").style.width = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("myNav").style.width = "0%";
+                    }
+                    </script>
+                    
+                </nav>
+                <hr>
                 <iframe src="details.html" scrolling="no" class="loader" seamless></iframe>
                 <br>
                 <button onclick="document.getElementById('header').scrollIntoView()">Scroll to Top</button>
@@ -114,6 +328,79 @@ function closeNav() {
 
             <div class="parallax" id="parallax4"></div>
             <div id="food">
+                <header>
+                    <h1>Food</h1>
+                </header>
+                <nav>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                    body {
+                      font-family: 'Lato', sans-serif;
+                    }
+                    
+                    .overlay {
+                      height: 100%;
+                      width: 0;
+                      position: fixed;
+                      z-index: 1;
+                      top: 0;
+                      left: 0;
+                      background-color: rgb(0,0,0);
+                      background-color: rgba(0,0,0, 0.9);
+                      overflow-x: hidden;
+                      transition: 0.5s;
+                    }
+                    
+                    .overlay-content {
+                      position: relative;
+                      top: 25%;
+                      width: 100%;
+                      text-align: center;
+                      margin-top: 30px;
+                    }
+                    
+                    .overlay .closebtn {
+                      position: absolute;
+                      top: 20px;
+                      right: 45px;
+                      font-size: 60px;
+                    }
+                    
+                    @media screen and (max-height: 450px) {
+                      .overlay nav {font-size: 20px}
+                      .overlay .closebtn {
+                      top: 15px;
+                      right: 35px;
+                      }
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <div class="overlay-content">
+                        <button id="Nav" onclick="document.getElementById('attractions').scrollIntoView(),closeNav()">Attractions</button>
+                        <button id="Nav" onclick="document.getElementById('transportation').scrollIntoView(),closeNav()">Transportation</button>
+                        <button id="Nav" onclick="document.getElementById('details').scrollIntoView(),closeNav()">Details</button>
+                        <button id="Nav" onclick="document.getElementById('food').scrollIntoView(),closeNav()">Food</button>
+                        <button id="Nav" onclick="document.getElementById('home').scrollIntoView(),closeNav()">Home</button>
+                      </div>
+                    </div>
+                    <span id="openButton" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("myNav").style.width = "100%";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("myNav").style.width = "0%";
+                    }
+                    </script>
+                    
+                </nav>
+                <hr>
                 <iframe src="food.html" scrolling="no" class="loader" seamless></iframe>
                 <br>
                 <button onclick="document.getElementById('header').scrollIntoView()">Scroll to Top</button>
