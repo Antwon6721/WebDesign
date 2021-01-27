@@ -52,6 +52,14 @@ h2 {
     display: table;
   }
 
+  .heading {
+    color:white;
+  }
+
+  span {
+    color:yellow
+  }
+
 .parallax{
     height: 100%;
     background-attachment: fixed;
