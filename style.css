@@ -36,6 +36,22 @@ h2 {
     color:grey;
 }
 
+* {
+    box-sizing: border-box;
+  }
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 .parallax{
     height: 100%;
     background-attachment: fixed;
