@@ -42,10 +42,9 @@ h1,h2,h3,h4,h6{
     color:white;
   }
 
-  span {
-    color:yellow
-  }
-
+span {
+    color:yellow;
+}
 .parallax{
     height: 100%;
     background-attachment: fixed;
@@ -92,6 +91,7 @@ button {
 
   .closebtn{
       color:#818181;
+      text-decoration: none;
   }
   
   button:hover{
