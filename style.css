@@ -98,6 +98,10 @@ button {
       color:#818181;
       text-decoration: none;
   }
+  .closebtn:hover{
+    color:cyan;
+    text-decoration: none;
+}
   
   button:hover{
     background-color: cyan;
